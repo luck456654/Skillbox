@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="./img/favicon.png" />
+
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/swiper-banner.css">
+    <link rel="stylesheet" type="text/css" href="css/style-mobilemini.css">
+    <link rel="stylesheet" type="text/css" href="css/style-mobile.css">
+    <link rel="stylesheet" type="text/css" href="css/style-tablet.css">
+    <link rel="stylesheet" type="text/css" href="css/style-descktop.css">
+    <link rel="stylesheet" type="text/css" href="css/menu.css">
+
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/css/swiper.min.css">
+    <title>Blanchard</title>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <div class="header__header-container">
+                <a href="#">
+                    <svg width="36" height="29" viewBox="0 0 36 29" class="header-container__burger" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <rect width="36" height="3.65217" transform="matrix(-1 0 0 1 36 0.700012)" fill="white" />
+                        <path d="M28.2002 12.8739H0.000194192V16.5261H28.2002V12.8739Z" fill="white" />
+                        <path d="M24 25.0479H-9.53674e-07V28.7H24V25.0479Z" fill="white" />
+                    </svg>
+
+
+                </a>
+
+                <a href="#" class="header__header-logo">
+                    <img src="img/logo.svg" class="header__header-logo" alt="Логотип" />
+                </a>
+
+                <ul class="header__main-menu">
+                    <li><a href="" class="header__li-mainmenu bg-color">О нас</a></li>
+                    <li><a href="" class="header__li-mainmenu bg-color">Галерея</a></li>
+                    <li><a href="" class="header__li-mainmenu bg-color">Каталог</a></li>
+                    <li><a href="" class="header__li-mainmenu bg-color">События</a></li>
+                    <li><a href="" class="header__li-mainmenu bg-color">Издания</a></li>
+                    <li><a href="" class="header__li-mainmenu bg-color">Проекты</a></li>
+                    <li><a href="" class="header__li-mainmenu_last bg-color">Контакты</a></li>
+                </ul>
+               
+                    <div class="form-container">
+                        <button class="form-btn__open"><svg width="30" height="29" class="header__icon-search" viewBox="0 0 30 29" fill="white"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <rect width="9.15446" height="2.28862"
+                                    transform="matrix(-0.718931 0.695081 0.718931 0.695081 6.58105 21.0461)"
+                                    fill="white" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M16.1246 24.174C10.0376 24.174 5.32763 19.2726 5.32763 13.5104C5.32763 7.74823 10.0376 2.84676 16.1246 2.84676C22.2115 2.84676 26.9215 7.74823 26.9215 13.5104C26.9215 19.2726 22.2115 24.174 16.1246 24.174ZM16.1246 26.8399C8.76285 26.8399 2.79502 20.8721 2.79502 13.5104C2.79502 6.14869 8.76285 0.180847 16.1246 0.180847C23.4863 0.180847 29.4541 6.14869 29.4541 13.5104C29.4541 20.8721 23.4863 26.8399 16.1246 26.8399Z"
+                                    fill="white" />
+                            </svg>
+                        </button>
+                  
+                        <form action="/" class="form">
+                            <button class="form-btn__submit"><svg width="24" height="24" viewBox="0 0 30 29" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg" >
+                                    <rect width="9.15446" height="2.28862"
+                                        transform="matrix(-0.718931 0.695081 0.718931 0.695081 6.58105 21.0461)"
+                                        fill="grey" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M16.1246 24.174C10.0376 24.174 5.32763 19.2726 5.32763 13.5104C5.32763 7.74823 10.0376 2.84676 16.1246 2.84676C22.2115 2.84676 26.9215 7.74823 26.9215 13.5104C26.9215 19.2726 22.2115 24.174 16.1246 24.174ZM16.1246 26.8399C8.76285 26.8399 2.79502 20.8721 2.79502 13.5104C2.79502 6.14869 8.76285 0.180847 16.1246 0.180847C23.4863 0.180847 29.4541 6.14869 29.4541 13.5104C29.4541 20.8721 23.4863 26.8399 16.1246 26.8399Z"
+                                        fill="grey" />
+                                </svg>
+                            </button>
+                            <input class="form__input" type="text">
+                        </form>
+                    </div>
+                
+                <div class="header__login">
+                    <div>
+                        <svg viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            class="header__icon">
+                            <path
+                                d="M5.12056 9.09278L6.13889 10.1111L9.75 6.5L6.13889 2.88889L5.12056 3.90722L6.98389 5.77778H0V7.22222H6.98389L5.12056 9.09278ZM11.5556 0H1.44444C0.642778 0 0 0.65 0 1.44444V4.33333H1.44444V1.44444H11.5556V11.5556H1.44444V8.66667H0V11.5556C0 12.35 0.642778 13 1.44444 13H11.5556C12.35 13 13 12.35 13 11.5556V1.44444C13 0.65 12.35 0 11.5556 0Z"
+                                fill="white" />
+                        </svg>
+
+
+
+                    </div>
+                    <div class="header__label">
+                        Войти
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="banner">
+            <div class="swiper baner__anim">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="swiper__img banner__img1"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiper__img banner__img2"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiper__img banner__img3"></div>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+
+            <div class="banner__genres">
+                <ul class="list banner__submenu">
+
+                    <li class="list--item banner__submenu-li banner__genres-content banner__submenu-li-first">
+                        <button class="list--item__btn">Реализм</button>
+                        <svg class="banner__icon-expand banner__svg-icon" width="0.63vw" height="0.36vw" fill="none"
+                            viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11 1L6 6L1 1" stroke="white" />
+                        </svg>
+
+                        <div class="container--dropdown">
+                            <ul class="container--dropdown-list banner__card">
+                                <a href="#" class="banner__paint-linck">
+                                    <li class="container--dropdown-list__item banner__paint-tintoreto">Тинтореттo</li>
+                                </a>
+                                <a href="#" class="banner__paint-linck">
+                                    <li class="container--dropdown-list__item banner__paint-fridrih">Фридрих</li>
+                                </a>
+                                <a href="#" class="banner__paint-linck">
+                                    <li class="container--dropdown-list__item banner__paint-leonardo">Леонардо</li>
+                                </a>
+                                <a href="#" class="banner__paint-linck">
+                                    <li class="container--dropdown-list__item banner__paint-verrokkio">Верроккьо</li>
+                                </a>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="list--item banner__submenu-li banner__genres-content banner__submenu-imp">
+                        <button class="list--item__btn">Импрессионизм</button>
+                        <svg class="banner__icon-expand banner__svg-icon" width="0.63vw" height="0.36vw" fill="none"
+                            viewBox="0 0 12 7" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11 1L6 6L1 1" stroke="white" />
+                        </svg>
+                        <div class="container--dropdown">
+                            <ul class="container--dropdown-list banner__card">
+                                <a href="#" class="banner__paint-linck">
+                                    <li class="container--dropdown-list__item banner__paint-mone">Моне</li>
+                                </a>
+                                <a href="#" class="banner__paint-linck">
+                                    <li class="container--dropdown-list__item banner__paint-sislei">Сислей</li>
+                                </a>
+                                <a href="#" class="banner__paint-linck">
+                                    <li class="container--dropdown-list__item banner__paint-mane">Мане</li>
+                                </a>
+                                <a href="#" class="banner__paint-linck">
+                                    <li class="container--dropdown-list__item banner__paint-renuar">Ренуар</li>
+                                </a>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="list--item banner__submenu-li banner__genres-content banner__submenu-li-postimp">
+                        <button class="list--item__btn">Постимпрессионизм</button>
+                        <svg class="banner__icon-expand banner__svg-icon" width="0.63vw" height="0.36vw" fill="none"
+                            viewBox="0 0 12 7" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11 1L6 6L1 1" stroke="white" />
+                        </svg>
+                        <div class="container--dropdown">
+                            <ul class="container--dropdown-list banner__card">
+                                <a href="#" class="banner__paint-linck">
+                                    <li class="container--dropdown-list__item banner__paint-vangog">Ван Гог</li>
+                                </a>
+                                <a href="#" class="banner__paint-linck">
+                                    <li class="container--dropdown-list__item banner__paint-gogen">Гоген</li>
+                                </a>
+                                <a href="#" class="banner__paint-linck">
+                                    <li class="container--dropdown-list__item banner__paint-sezan">Сезанн</li>
+                                </a>
+                                <a href="#" class="banner__paint-linck">
+                                    <li class="container--dropdown-list__item banner__paint-sera">Сёра</li>
+                                </a>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="list--item banner__submenu-li banner__genres-content banner__submenu-li-avangard">
+                        <button class="list--item__btn">Авангард</button>
+                        <svg class="banner__icon-expand banner__svg-icon" width="0.63vw" height="0.36vw" fill="none"
+                            viewBox="0 0 12 7" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11 1L6 6L1 1" stroke="white" />
+                        </svg>
+                        <div class="container--dropdown">
+                            <ul class="container--dropdown-list banner__card">
+                                <a href="#" class="banner__paint-linck">
+                                    <li class="container--dropdown-list__item banner__paint-kandinski">Кандинский</li>
+                                </a>
+                                <a href="#" class="banner__paint-linck">
+                                    <li class="container--dropdown-list__item banner__paint-marinetti">Маринетти</li>
+                                </a>
+                                <a href="#" class="banner__paint-linck">
+                                    <li class="container--dropdown-list__item banner__paint-malevich">Малевич</li>
+                                </a>
+                                <a href="#" class="banner__paint-linck">
+                                    <li class="container--dropdown-list__item banner__paint-pikasso">Пикассо</li>
+                                </a>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="list--item banner__submenu-li banner__genres-content banner__submenu-li-futorism">
+                        <button class="list--item__btn">Футуризм</button>
+                        <svg class="banner__icon-expand banner__svg-icon" width="0.63vw" height="0.36vw" fill="none"
+                            viewBox="0 0 12 7" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11 1L6 6L1 1" stroke="white" />
+                        </svg>
+                        <div class="container--dropdown">
+                            <ul class="container--dropdown-list banner__card ">
+                                <a href="#" class="banner__paint-linck">
+                                    <li class="container--dropdown-list__item banner__paint-karra">Карра</li>
+                                </a>
+                                <a href="#" class="banner__paint-linck">
+                                    <li class="container--dropdown-list__item banner__paint-pratella">Прателла</li>
+                                </a>
+                                <a href="#" class="banner__paint-linck">
+                                    <li class="container--dropdown-list__item banner__paint-severini">Северини</li>
+                                </a>
+                                <a href="#" class="banner__paint-linck">
+                                    <li class="container--dropdown-list__item banner__paint-bala">Балла</li>
+                                </a>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+
+
+
+
+                <img src="../Blanchard/img/icon-search.png" class="banner__icon-search" alt="Поиск" />
+                <div class="submenu__title-search">Поиск по сайту</div>
+            </div>
+            <div class="banner__title">Прикоснитесь к прекрасному</div>
+            <div class="banner__description">Мы вынуждены отталкиваться от того, что реализация намеченных плановых
+                заданий создаёт предпосылки для новых предложений.</div>
+            <div class="banner__button-outline">
+                <button class="banner__button">Подписаться на рассылку</button>
+            </div>
+
+
+
+        </section>
+        <section class="aboutus">
+            <h2 class="aboutus__title">О нас</h2>
+            <div class="aboutus__description">Ясность нашей позиции очевидна: семантический разбор внешних
+                противодействий однозначно определяет каждого участника как способного принимать собственные решения
+                касаемо распределения внутренних резервов и ресурсов. Не следует, однако, забывать, что
+                высококачественный прототип будущего проекта влечет за собой процесс внедрения и модернизации модели
+                развития. Повседневная практика показывает, что высокое качество позиционных исследований создаёт
+                необходимость включения в производственный план целого ряда внеочередных мероприятий с учётом комплекса
+                распределения внутренних резервов и ресурсов. В рамках спецификации современных стандартов, действия
+                представителей оппозиции набирают популярность среди определенных слоев населения, а значит, должны быть
+                разоблачены.</div>
+        </section>
+        <section class="gallery">
+            <h2 class="gallery__title">Галерея</h2>
+            <div class="gallery__content">
+                <div class="gallery__partleft">
+                    <div class="gallery__filter">Фильтр:</div>
+                    <ul class="list banner__submenu gallery__filtr-main">
+                        <li class="list--item gallery__button">
+                            <button class="list--item__btn gallery__select-title">Живопись</button>
+
+                            <div class="container--dropdown">
+                                <ul class="container--dropdown-list">
+                                    <li class="container--dropdown-list__item">Рисунок</li>
+                                    <li class="container--dropdown-list__item">Скульптура</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <img src="./img/icon-expand.svg" class="banner__icon-expand banner__icon-expand-main">
+                    </ul>
+                    <div class="gallery__download">Вам предоставляется 10 бесплатных скачиваний. Для
+                        увеличения количества скачиваний <a href="#" class="gallery__linck">авторизуйтесь</a>, либо
+                        воспользуйтесь лицензией.
+                    </div>
+                </div>
+                <div class="gallery__partright">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div
+                                    class="gallery__paint1 gallery__img_first">
+                                    <div class="gallery__glass">
+                                        <img src="img/gallery-glass.svg" class="gallery__glass-paint">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div
+                                    class="gallery__paint2 gallery__img">
+                                    <div class="gallery__glass">
+                                        <img src="img/gallery-glass.svg" class="gallery__glass-paint">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div
+                                    class="gallery__paint3 gallery__img_first">
+                                    <div class="gallery__glass">
+                                        <img src="img/gallery-glass.svg" class="gallery__glass-paint">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div
+                                    class="gallery__paint4 gallery__img">
+                                    <div class="gallery__glass">
+                                        <img src="img/gallery-glass.svg" class="gallery__glass-paint">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div
+                                    class="gallery__paint5 gallery__img_first ">
+                                    <div class="gallery__glass">
+                                        <img src="img/gallery-glass.svg" class="gallery__glass-paint">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div
+                                    class="gallery__paint6  gallery__img">
+                                    <div class="gallery__glass">
+                                        <img src="img/gallery-glass.svg" class="gallery__glass-paint">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div
+                                    class="gallery__paint21 gallery__img_first">
+                                    <div class="gallery__glass">
+                                        <img src="img/gallery-glass.svg" class="gallery__glass-paint">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div
+                                    class="gallery__paint22  gallery__img">
+                                    <div class="gallery__glass">
+                                        <img src="img/gallery-glass.svg" class="gallery__glass-paint">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div
+                                    class="gallery__paint23 gallery__img_first">
+                                    <div class="gallery__glass">
+                                        <img src="img/gallery-glass.svg" class="gallery__glass-paint">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div
+                                    class="gallery__paint24  gallery__img">
+                                    <div class="gallery__glass">
+                                        <img src="img/gallery-glass.svg" class="gallery__glass-paint">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div
+                                    class="gallery__paint25 gallery__img_first">
+                                    <div class="gallery__glass">
+                                        <img src="img/gallery-glass.svg" class="gallery__glass-paint">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div
+                                    class="gallery__paint26 gallery__img">
+                                    <div class="gallery__glass">
+                                        <img src="img/gallery-glass.svg" class="gallery__glass-paint">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div
+                                    class="gallery__paint31 gallery__img_first">
+                                    <div class="gallery__glass">
+                                        <img src="img/gallery-glass.svg" class="gallery__glass-paint">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div
+                                    class="gallery__paint32 gallery__img">
+                                    <div class="gallery__glass">
+                                        <img src="img/gallery-glass.svg" class="gallery__glass-paint">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div
+                                    class="gallery__paint33 gallery__img_first">
+                                    <div class="gallery__glass">
+                                        <img src="img/gallery-glass.svg" class="gallery__glass-paint">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div
+                                    class="gallery__paint34  gallery__img">
+                                    <div class="gallery__glass">
+                                        <img src="img/gallery-glass.svg" class="gallery__glass-paint">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div
+                                    class="gallery__paint35 gallery__img_first ">
+                                    <div class="gallery__glass">
+                                        <img src="img/gallery-glass.svg" class="gallery__glass-paint">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div
+                                    class="gallery__paint36  gallery__img">
+                                    <div class="gallery__glass">
+                                        <img src="img/gallery-glass.svg" class="gallery__glass-paint">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div
+                                    class="gallery__paint41 gallery__img_first ">
+                                    <div class="gallery__glass">
+                                        <img src="img/gallery-glass.svg" class="gallery__glass-paint">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div
+                                    class="gallery__paint42  gallery__img">
+                                    <div class="gallery__glass">
+                                        <img src="img/gallery-glass.svg" class="gallery__glass-paint">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div
+                                    class="gallery__paint43 gallery__img_first">
+                                    <div class="gallery__glass">
+                                        <img src="img/gallery-glass.svg" class="gallery__glass-paint">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div
+                                    class="gallery__paint44 gallery__img_first gallery__img">
+                                    <div class="gallery__glass">
+                                        <img src="img/gallery-glass.svg" class="gallery__glass-paint">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div
+                                    class="gallery__paint45 gallery__img_first ">
+                                    <div class="gallery__glass">
+                                        <img src="img/gallery-glass.svg" class="gallery__glass-paint">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div
+                                    class="gallery__paint46  gallery__img">
+                                    <div class="gallery__glass">
+                                        <img src="img/gallery-glass.svg" class="gallery__glass-paint">
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+
+
+
+
+
+
+
+                        </div>
+                    </div>
+                </div>
+
+
+        </section>
+
+
+        <div class="container-catalog">
+            <h2 class="container-catalog__title">Каталог</h2>
+            <img src="./img/сatalog__icon1.svg" class="container-catalog__icon" alt="Франция" />
+            <img src="./img/сatalog__icon2.svg" class="container-catalog__icon" alt="Испания" />
+            <img src="./img/catalog__icon3.png" class="container-catalog__icon-portugal" alt="Португалия" />
+            <img src="./img/сatalog__icon4.svg" class="container-catalog__icon" alt="Россия" />
+            <img src="./img/сatalog__icon5.svg" class="container-catalog__icon " alt="Нидерланды" />
+            <div class="container-catalog__description">Акционеры крупнейших компаний, которые представляют собой яркий
+                пример континентально-европейского типа политической культуры, будут объявлены нарушающими
+                общечеловеческие нормы этики и морали. Являясь всего лишь частью общей картины, стремящиеся вытеснить
+                традиционное производство, нанотехнологии и по сей день остаются уделом либералов, которые жаждут быть
+                функционально разнесены на независимые элементы. </div>
+            <div class="container-catalog__content">
+                <div>
+                    <img src="./img/catalog__img-main.png" alt="Доминико Гирландайо" class="catalog__img-main">
+                    <div class="container-catalog__author">Доменико Гирландайо</div>
+                    <div class="container-catalog__date-author">2 июня 1448 — 11 января 1494.</div>
+                    <div class="container-catalog__date-author container-catalog__desc-author">Один из ведущих
+                        флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его
+                        брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в течение года
+                        овладевал профессиональными навыками. Автор фресковых циклов, в которых выпукло, со
+                        всевозможными подробностями показана домашняя жизнь библейских персонажей (в их роли выступают
+                        знатные граждане Флоренции в костюмах того времени).
+                    </div>
+                </div>
+                <div class="container-catalog__part-right">
+                    <div class="container-catalog__list">
+                        <div>C 1400 по 1499 гг.</div>
+                        <img src="./img/catalog_icon.png" alt="Развернуть/Свернуть" class="catalog__icon" />
+                        <div class="container-catalog__sublist"></div>
+                    </div>
+                    <div class="container-catalog__list">
+                        <div>C 1500 по 1599 гг.</div>
+                        <img src="./img/catalog_icon.png" alt="Развернуть/Свернуть" class="catalog__icon">
+                    </div>
+                    <div class="container-catalog__list container-catalog__list-item">
+                        <div>C 1600 по 1699 гг.</div>
+                        <img src="./img/catalog_icon.png" alt="Развернуть/Свернуть" class="catalog__icon">
+                    </div>
+                    <div class="container-catalog__list container-catalog__list-item">
+                        <div>C 1700 по 1799 гг.</div>
+                        <img src="./img/catalog_icon.png" alt="Развернуть/Свернуть" class="catalog__icon">
+                    </div>
+                    <div class="container-catalog__list container-catalog__list-item">
+                        <div>C 1800 по 1899 гг.</div>
+                        <img src="./img/catalog_icon.png" alt="Развернуть/Свернуть" class="catalog__icon">
+                    </div>
+                    <div class="container-catalog__list container-catalog__list-item">
+                        <div>C 1900 по 1999 гг.</div>
+                        <img src="./img/catalog_icon.png" alt="Развернуть/Свернуть" class="catalog__icon">
+                    </div>
+                    <div class="container-catalog__list container-catalog__list-item">
+                        <div>C 2000 г.</div>
+                        <img src="./img/catalog_icon.png" alt="Развернуть/Свернуть" class="catalog__icon">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container-events">
+            <h2 class="container-events__title">События</h2>
+            <div class="container-events__carts">
+                <div class="container-events__cart">
+                    <img src="./img/events__img1.jpg" class="container-events__img" alt="Событие1">
+                    <div class="container-events__cart-address">Музей им. Щусева<br> с 20 марта по 30 апреля</div>
+                    <div class="container-events__cart-title"> Книжная гравюра в живом восприятии </div>
+                    <div class="container-events__cart-description">Один из ведущих флорентийских художников
+                        Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын
+                        Ридольфо.</div>
+                    <a href="#">
+                        <div class="container-events__cart-more">Подробнее</div>
+                    </a>
+                </div>
+                <div class="container-events__cart">
+                    <img src="./img/events__img2.jpg" class="container-events__img" alt="Событие2">
+                    <div class="container-events__cart-address">ММОМА<br>
+                        24 марта 19:00</div>
+                    <div class="container-events__cart-title">&#171;Открытая дискуссия&#187;. Дмитрий Петров и Сергей
+                        Ильин.</div>
+                    <div class="container-events__cart-description">Высокий уровень вовлечения представителей целевой
+                        аудитории является четким доказательством простого факта.</div>
+                    <a href="#">
+                        <div class="container-events__cart-still">Подробнее</div>
+                    </a>
+                </div>
+                <div class="container-events__cart">
+                    <img src="./img/events__img3.jpg" class="container-events__img" alt="Событие3">
+                    <div class="container-events__cart-address">Еврейский музей<br>
+                        с 31 марта по 21 апреля</div>
+                    <div class="container-events__cart-title">Выставка &#171;Формация 2020&#187;</div>
+                    <div class="container-events__cart-description">Идейные соображения высшего порядка, а также
+                        современная методология разработки играет важную роль в формировании глубокомысленных
+                        рассуждений.</div>
+                    <a href="#">
+                        <div class="container-events__cart-still">Подробнее</div>
+                    </a>
+                </div>
+            </div>
+            <button class="container-events__button">Все события</button>
+        </div>
+        <div class="container-editions">
+            <h2 class="container-editions__title">Издания</h2>
+            <div class="container-editions__content">
+                <div class="container-editions__part-left">
+                    <div class="container-editions__category-title">Категории</div>
+                    <form class="container-editions__part-left">
+                        <p class="container-editions__category container-editions__category-first"><input
+                                type="checkbox" class="container-editions__checkbox">Бестсселлер
+                            <p class="container-editions__category"><input type="checkbox"
+                                    class="container-editions__checkbox">Искусство
+                                <p class="container-editions__category"><input type="checkbox"
+                                        class="container-editions__checkbox">Архитектура
+                                    <p class="container-editions__category"><input type="checkbox"
+                                            class="container-editions__checkbox">Дизайн
+                                        <p class="container-editions__category container-editions__category_sec"><input
+                                                type="checkbox" class="container-editions__checkbox">Мода
+                                            <p class="container-editions__category container-editions__category_sec">
+                                                <input type="checkbox" class="container-editions__checkbox">Детям
+                                                <p
+                                                    class="container-editions__category container-editions__category_sec">
+                                                    <input type="checkbox"
+                                                        class="container-editions__checkbox">Художественная литература
+                                                    <p
+                                                        class="container-editions__category container-editions__category_sec">
+                                                        <input type="checkbox"
+                                                            class="container-editions__checkbox">Публицистика
+                                                        <p
+                                                            class="container-editions__category container-editions__category_sec">
+                                                            <input type="checkbox"
+                                                                class="container-editions__checkbox">Путеводители
+                                                            <p
+                                                                class="container-editions__category container-editions__category_sec">
+                                                                <input type="checkbox"
+                                                                    class="container-editions__checkbox">Философия
+                                                                <p
+                                                                    class="container-editions__category container-editions__category_sec">
+                                                                    <input type="checkbox"
+                                                                        class="container-editions__checkbox">Учебная
+                                                                    литература
+                                                                    <p
+                                                                        class="container-editions__category container-editions__category_sec">
+                                                                        <input type="checkbox"
+                                                                            class="container-editions__checkbox">Журналы
+                                                                        и газеты
+                    </form>
+                    <div class="container-editions__price">Цена </div>
+                    <div class="container-editions__inputs">
+                        <input class="container-editions__price-label" value="От">
+                        <input class="container-editions__price-item" value="50">
+                        <input class="container-editions__price-label" value="до">
+                        <input class="container-editions__price-item" value="25 000">
+                        <input class="container-editions__price-label" value="руб.">
+                    </div>
+                </div>
+
+                <div class="container-editions__part-right">
+                    <div class="swiper-container">
+
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="container-editions__cards">
+                                    <div class="container-editions__card">
+                                        <img src="./img/editions1.png" alt="Издание1" class="container-editions__img">
+                                        <div class="container-editions__description">
+                                            <div>
+                                                <div class="container-editions__book-title">Искусство цвета</div>
+                                                <div class="container-editions__book-author">Иттен, Иоханнес </div>
+                                            </div>
+                                            <div class="container-editions__prices"><i>620 руб</i></div>
+                                        </div>
+                                        <button class="container-editions__button_first">Заказать</button>
+                                    </div>
+
+                                    <div class="container-editions__card">
+                                        <img src="./img/editions2.png" alt="Издание2" class="container-editions__img">
+                                        <div class="container-editions__description">
+                                            <div>
+                                                <div class="container-editions__book-title">Типографика</div>
+                                                <div class="container-editions__book-author">Рудер, Эмиль</div>
+                                            </div>
+                                            <div class="container-editions__prices"><i>2 450 руб</i></div>
+                                        </div>
+                                        <button class="container-editions__button">Заказать</button>
+                                    </div>
+                                    <div class="container-editions__card">
+                                        <img src="./img/editions3.png" alt="Издание3" class="container-editions__img">
+                                        <div class="container-editions__description">
+                                            <div>
+                                                <div class="container-editions__book-title">Книга про буквы</div>
+                                                <div class="container-editions__book-author">Гордон, Юрий</div>
+                                            </div>
+                                            <div class="container-editions__prices"><i>2 200 руб</i></div>
+                                        </div>
+                                        <button class="container-editions__button">Заказать</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div>
+                                    <div class="container-editions__cards">
+                                        <div class="container-editions__card">
+                                            <img src="./img/editions4.png" alt="Издание4"
+                                                class="container-editions__img">
+                                            <div class="container-editions__description">
+                                                <div>
+                                                    <div class="container-editions__book-title">Николай Ильин
+                                                        Кричевский,</div>
+                                                    <div class="container-editions__book-author">Владимир</div>
+                                                </div>
+                                                <div class="container-editions__prices"><i>1 100 руб</i></div>
+                                            </div>
+                                            <button class="container-editions__button_first">Заказать</button>
+                                        </div>
+
+                                        <div class="container-editions__card">
+                                            <img src="./img/editions5.png" alt="Издание5"
+                                                class="container-editions__img">
+                                            <div class="container-editions__description">
+                                                <div>
+                                                    <div class="container-editions__book-title">Модульные сетки в
+                                                        граф... </div>
+                                                    <div class="container-editions__book-author">Мюллер-Брокманн, Йозеф
+                                                    </div>
+                                                </div>
+                                                <div class="container-editions__prices"><i>1 450 руб</i></div>
+                                            </div>
+                                            <button class="container-editions__button">Заказать</button>
+                                        </div>
+                                        <div class="container-editions__card">
+                                            <img src="./img/editions6.png" alt="Издание6"
+                                                class="container-editions__img">
+                                            <div class="container-editions__description">
+                                                <div>
+                                                    <div class="container-editions__book-title">Эволюция графических
+                                                        ст...</div>
+                                                    <div class="container-editions__book-author">Хеллер, Чваст</div>
+                                                </div>
+                                                <div class="container-editions__prices"><i>3 200 руб</i></div>
+                                            </div>
+                                            <button class="container-editions__button">Заказать</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div>
+                                    <div class="container-editions__cards">
+                                        <div class="container-editions__card">
+                                            <img src="./img/editions7.png" alt="Издание7"
+                                                class="container-editions__img">
+                                            <div class="container-editions__description">
+                                                <div>
+                                                    <div class="container-editions__book-title">Искусство и визуальное
+                                                        в...</div>
+                                                    <div class="container-editions__book-author">Арнхейм, Рудольф</div>
+                                                </div>
+                                                <div class="container-editions__prices"><i>2 200 руб</i></div>
+                                            </div>
+                                            <button class="container-editions__button_first">Заказать</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-projects">
+            <h2 class="container-projects__title">Проекты</h2>
+            <div class="container-projects__description">
+                Предварительные выводы: постоянное информационно-пропагандистское обеспечение нашей деятельности
+                однозначно фиксирует необходимость своевременного выполнения сверхзадачи. А ещё независимые государства
+                смешаны с не уникальными данными до степени совершенной неузнаваемости, из-за чего возрастает их статус
+                бесполезности. Прежде всего, постоянное информационно-пропагандистское обеспечение нашей деятельности
+                однозначно фиксирует необходимость экономической целесообразности принимаемых решений. И нет сомнений,
+                что действия представителей оппозиции могут быть рассмотрены исключительно в разрезе маркетинговых и
+                финансовых предпосылок. Банальные, но неопровержимые выводы, а также представители современных
+                социальных резервов призывают нас к новым свершениям, которые, в свою очередь, должны быть смешаны с не
+                уникальными данными до степени совершенной неузнаваемости. Подробнее: <a
+                    href="#">blanchard-art.ru/projects/about</a>
+            </div>
+            <div class="container-projects__partners">Партнёры проектов:</div>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <div class="container-projects__cards container-projects__cards_first">
+                            <div class="container-projects__img-partners">
+                                <img src="./img/img-partners1.png" alt="Проект1" class="container-projects__img" />
+                            </div>
+                            <div class="container-projects__img-partners">
+                                <img src="./img/img-partners2.png" alt="Проект2" class="container-projects__img" />
+                            </div>
+                            <div class="container-projects__img-partners">
+                                <img src="./img/img-partners3.png" alt="Проект3" class="container-projects__img" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="container-projects__cards">
+                            <div class="container-projects__img-partners">
+                                <img src="./img/img-partners4.png" alt="Проект4" class="container-projects__img" />
+                            </div>
+                            <div class="container-projects__img-partners">
+                                <img src="./img/img-partners5.png" alt="Проект5"
+                                    class="container-projects__img container-projects__cards_second" />
+                            </div>
+                            <div class="container-projects__img-partners">
+                                <img src="./img/img-partners6.png" alt="Проект6" class="container-projects__img" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="container-projects__cards">
+                            <div class="container-projects__img-partners">
+                                <img src="./img/img-partners7.png" alt="Проект7" class="container-projects__img" />
+                            </div>
+                            <div class="container-projects__img-partners">
+                                <img src="./img/img-partners8.png" alt="Проект8" class="container-projects__img" />
+                            </div>
+                            <div class="container-projects__img-partners">
+                                <img src="./img/img-partners9.png" alt="Проект9" class="container-projects__img" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-contacts">
+            <h2 class="container-contacts__title">Контакты</h2>
+            <div class="container-contacts__content">
+                <div class="container-contacts__part-left">
+                    <div class="container-contacts__address">
+                        Шоурум №4
+                        <p class="container-contacts__subaddress">Леонтьевский переулок, дом 5/1</p>
+                    </div>
+                    <div class="container-contacts__call-us">
+                        Заказать обратный звонок
+                    </div>
+                    <form>
+                        <input type="text" value="Имя*" class="container-contacts__input-name">
+                        <p><input type="text" value="Телефон*" class="container-contacts__input-tel"></p>
+                        <button type="submit" class="container-contacts__button">Заказать</button>
+                    </form>
+                    <div class="container-contacts__socnet-label">Cвязаться в один клик</div>
+                    <div class="container-contacts__socicons">
+                        <a href="#">
+                            <img src="./img/whatsapp-Icon.svg" alt="Вацапп" class="container-contacts__soc-icon" />
+                        </a>
+                        <a href="#">
+                            <img src="./img/telegram-icon.svg" alt="Телеграм" class="container-contacts__soc-icon" />
+                        </a>
+                    </div>
+                </div>
+                <div class="container-contacts__part-right">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5495.756450036767!2d37.601297067590686!3d55.76023302069144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a46021ca71d%3A0x9f8e848a0c90b98d!2z0JvQtdC-0L3RgtGM0LXQstGB0LrQuNC5INC_0LXRgC4sINCc0L7RgdC60LLQsA!5e0!3m2!1sru!2sru!4v1636985898369!5m2!1sru!2sru"
+                        style="border:0;width:64.48vw;height:35.52vw;filter: grayscale(100%);" allowfullscreen=""
+                        loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+    <footer>
+        <div class="container-footer">
+            <img src="./img/logo.svg" class="container-footer__logo" alt="Логотип">
+            <div class="container-footer__socicons">
+                <a href=""><img src="./img/vk.svg" alt="ВКонтакте" class="container-footer__icon-vk" /></a>
+                <a href=""><img src="./img/instagram.svg" alt="Инстаграмм" class="container-footer__icon-in" /></a>
+                <a href=""><img src="./img/fb.svg" alt="Фейсбук" class="container-footer__icon-fb" /></a>
+            </div>
+        </div>
+    </footer>
+    <script src="js/script.js" defer></script>
+    <script src="js/menu.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.min.js"></script>
+    <script>
+        const container = document.querySelector(".container")
+        const swiper = new Swiper('.swiper', {
+            // Default parameters
+            slidesPerView: 1,
+            speed: 6000,
+            autoplay: {
+
+                waitForTransition: true
+
+            },
+            effect: "fade",
+            allowTouchMove: false,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev"
+            },
+
+
+            pagination: {
+                el: '.swiper-bullet-pagination',
+                type: 'bullets',
+                clickable: true
+            }
+
+        });
+
+        let gallerySlider = new Swiper(".swiper-container", {
+            slidesPerView: 3,
+            slidesPerGroup: 3,
+            grid: {
+                rows: 2
+            },
+            spaceBetween: 30,
+            pagination: {
+                el: ".swiper-pagination--right",
+                type: "fraction"
+            },
+            navigation: {
+                nextEl: ".swiper-btn--next",
+                prevEl: ".swiper-btn--prev"
+            },
+
+            breakpoints: {
+                320: {
+                    slidesPerView: 1,
+                    grid: {
+                        rows: 1
+                    },
+                    spaceBetween: 0
+                },
+                576: {
+                    slidesPerView: 2,
+                    grid: {
+                        rows: 2
+                    },
+                    spaceBetween: 30
+                },
+
+                1200: {
+                    slidesPerView: 2,
+                    grid: {
+                        rows: 3
+                    },
+                    spaceBetween: 50
+                }
+            },
+
+            a11y: {
+                prevSlideMessage: 'Предыдущий',
+                nextSlideMessage: 'Следующий',
+            }
+
+            // on: {
+            //   /* исправляет баг с margin-top остающимся при смене брейкпоинта, это было нужно в 6-й версии свайпера */
+            //   beforeResize: function () {
+            //     this.slides.forEach((el) => {
+            //       el.style.marginTop = "";
+            //     });
+            //   }
+            // }
+        });
+    </script>
+    <script src="js/script.js" defer></script>
+    <script src="js/form-search.js" defer></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js" defer></script>
+</body>
+
+</html>
