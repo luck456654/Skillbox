@@ -1,0 +1,126 @@
+
+
+.gallery-section .gallery__container {
+  max-width: 1703px;
+  margin: 0 auto;
+  padding-left: 50px;
+  padding-right: 50px;
+  display: flex;
+}
+
+.gallery-left--content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+  min-width: 300px;
+}
+
+.gallery__right--content {
+  max-width: 1200px;
+  width: 100%;
+  overflow: hidden;
+}
+.gallery__right--content .gallery-wrapper {
+    height: 750px;
+}
+.gallery-btn--prev, .gallery-btn--next {
+  cursor: pointer;
+  background-color: transparent;
+  color: #fff;
+  border: 2px solid blue;
+  padding: 10px;
+}
+.gallery-section .gallery__slide {
+  background-color: grey;
+  position: relative;
+  
+  cursor: pointer;
+  height: calc((100% - 50px) / 2);
+}
+.gallery-section .gallery__slide:before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  bottom: 20px;
+  right: 20px;
+  left: 20px;
+  background-color: rgba(0,0,0,0.5);
+  background-image: url("https://icon-library.com/images/57784.svg.svg");
+  background-size: 30%;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+  z-index: -1;
+  opacity: 0;
+  
+  transition-property: z-index, opacity;
+  transition: .3s ease-in-out;
+}
+.swiper-slide:hover:before {
+  z-index: 1;
+  opacity: 1;
+}
+.gallery-right-btns {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  
+  margin-bottom: 40px;
+}
+.gallery__pagination--right {
+  max-width: 50px;
+  text-align: center;
+}
+.swiper-btn--prev {
+  margin-right: 20px;
+}
+.gallery__pagination--right {
+  margin-right: 20px;
+}
+.sw-btn.swiper-button-disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.swiper-slide--img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-position: center;
+}
+
+@media screen and (max-width: 992px) { 
+  .gallery-section .gallery__container {
+    flex-direction: column;
+  }
+  .gallery-right--content {
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .gallery-right--content {
+    height: auto;
+    
+    display: flex;
+    flex-direction: column;
+  }
+  .gallery-right--content .swiper-wrapper {
+    order: 1;
+    margin-bottom: 40px;
+  }
+  .gallery-right-btns {
+    order: 2;
+    margin-bottom: 0;
+  }
+  .gallery-left--content {
+    margin-bottom: 40px;
+  }
+}
+
+
+
+
+
+
+
