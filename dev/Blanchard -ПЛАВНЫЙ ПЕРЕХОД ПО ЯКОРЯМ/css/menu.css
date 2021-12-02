@@ -1,0 +1,367 @@
+
+.container--dropdown-list__item:last-child:hover{
+  border: #8C65AB 2px solid;
+}
+ ul {
+    list-style: none;
+    padding: 0;
+  }
+  .list {
+    display: flex;
+      justify-content: space-between;
+  }
+  .list--item__btn {
+    background-color: transparent;
+    border: 1px solid grey;
+    padding: 5px 20px;
+    
+    cursor: pointer;
+    
+    color: #fff;
+    transition-property: background-color;
+    transition: .3s ease-in-out;
+  }
+  
+  .list--item__btn:focus-visible {
+    outline: 0;
+  }
+  .list--item__btn:active {
+    color:#7943a4;
+    color:white;
+  }
+  .list--item {
+    position: relative;
+  }
+  .container--dropdown {
+    background-color: rgba(0,0,0, 0.2);
+    color: #fff;
+    width: 200px;
+    position: absolute;
+    top: 40px;
+    margin-left: -1vw;
+    
+    display: none;
+  }
+  .container--dropdown-list__item {
+    padding: 20px;
+    border-bottom: 2px solid grey;
+  }
+  .container--dropdown-list__item:last-child {
+    border: 0;
+  }
+  
+  .active-list--item {
+    display: block;
+   }
+  .list--item__btn.active--btn:after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    background-color: #7943a4;
+    bottom: 0;
+    left: 0;
+    color:white;
+    
+    animation: anim 2s infinite ease-in-out;
+  }
+  
+  
+  
+  @keyframes anim {
+    0% {
+      transform: scaleX(0)  translateX(-50%);
+      opacity: 0;
+    }
+    50% {
+      transform: scaleX(1) translateX(0%);
+      opacity: 1;
+    }
+    100% {
+      transform: scaleX(0) translateX(50%);
+      opacity: 0;
+    }
+  }
+
+  .list--item__btn{
+    border: 0;
+    outline: 0;
+    margin-left: -0.9vw;
+    margin-right: 5.0vw;
+    font-family: "OpenSans-Regular";
+    font-weight: 400;
+    margin-top: 0.5vw;
+      }
+  
+  /*Дополнительные стили подменю */
+  .banner__li_first{
+    margin-left: 1.0vw;
+  }
+  .banner__li_second{
+    margin-left: 1.1vw;
+  }
+  .banner__paint-tintoreto{
+    background-image: url('../img/paint1-1.png');
+    background-size:cover;
+    width:11.46vw;
+    height:2.08vw;
+    margin-left: 1.1vw!important;
+    font-family: "OpenSans-Regular";
+    font-weight: 600;
+    
+   
+    background-repeat:no-repeat ;
+  }
+  .banner__paint-fridrih{
+    background-image: url('../img/paint1-2.png');
+    background-size:cover;
+    width:11.46vw;
+    height:2.08vw;
+    margin-left: 1.1vw!important;
+    background-repeat:no-repeat ;
+    font-family: "OpenSans-Regular";
+    font-weight: 600;
+    
+  }
+  .banner__paint-leonardo{
+    background-image: url('../img/paint1-3.png');
+    background-size:cover;
+    width:11.46vw;
+    height:2.08vw;
+    margin-left: 1.1vw!important;
+    background-repeat:no-repeat ;
+    font-family: "OpenSans-Regular";
+    font-weight: 600;
+    
+  }
+  .banner__paint-verrokkio{
+    background-image: url('../img/paint1-4.png');
+    background-size:cover;
+    width:11.46vw;
+    height:2.08vw;
+    margin-left: 1.1vw!important;
+    background-repeat:no-repeat ;
+    font-family: "OpenSans-Regular";
+    font-weight: 600;
+    
+  }
+  .banner__paint-mone{
+    background-image: url('../img/paint2-1.png');
+    background-size:cover;
+    width:11.46vw;
+    height:2.08vw;
+    margin-left: 1.1vw!important;
+    background-repeat:no-repeat ;
+    font-family: "OpenSans-Regular";
+    font-weight: 600;
+    
+  }
+  .banner__paint-sislei{
+    background-image: url('../img/paint2-2.png');
+    background-size:cover;
+    width:11.46vw;
+    height:2.08vw;
+    margin-left: 1.1vw!important;
+    background-repeat:no-repeat ;
+    font-family: "OpenSans-Regular";
+    font-weight: 600;
+    
+  }
+  .banner__paint-mane{
+    background-image: url('../img/paint2-3.png');
+    background-size:cover;
+    width:11.46vw;
+    height:2.08vw;
+    margin-left: 1.1vw!important;
+    background-repeat:no-repeat ;
+    font-family: "OpenSans-Regular";
+    font-weight: 600;
+    
+  }
+  .banner__paint-renuar{
+    background-image: url('../img/paint2-4.png');
+    background-size:cover;
+    width:11.46vw;
+    height:2.08vw;
+    margin-left: 1.1vw!important;
+    background-repeat:no-repeat;
+    font-family: "OpenSans-Regular";
+    font-weight: 600;
+    
+  }
+  .banner__paint-vangog{
+    background-image: url('../img/paint3-1.png');
+    background-size:cover;
+    width:11.46vw;
+    height:2.08vw;
+    margin-left: 1.1vw!important;
+    background-repeat:no-repeat ;
+    font-family: "OpenSans-Regular";
+    font-weight: 600;
+  
+  }
+  .banner__paint-gogen{
+    background-image: url('../img/paint3-2.png');
+    background-size:cover;
+    width:11.46vw;
+    height:2.08vw;
+    margin-left: 1.1vw!important;
+    background-repeat:no-repeat ;
+    font-family: "OpenSans-Regular";
+    font-weight: 600;
+    
+  }
+  .banner__paint-sezan{
+    background-image: url('../img/paint3-3.png');
+    background-size:cover;
+    width:11.46vw;
+    height:2.08vw;
+    margin-left: 1.1vw!important;
+    background-repeat:no-repeat ;
+    font-family: "OpenSans-Regular";
+    font-weight: 600;
+    
+  }
+  .banner__paint-sera{
+    background-image: url('../img/paint3-4.png');
+    background-size:cover;
+    width:11.46vw;
+    height:2.08vw;
+    margin-left: 1.1vw!important;
+    background-repeat:no-repeat ;
+    font-family: "OpenSans-Regular";
+    font-weight: 600;
+   
+  }
+  .banner__paint-kandinski{
+    background-image: url('../img/paint4-1.png');
+    background-size:cover;
+    width:11.46vw;
+    height:2.08vw;
+    margin-left: 1.1vw!important;
+    background-repeat:no-repeat;
+    font-family: "OpenSans-Regular";
+    font-weight: 600;
+    
+  }
+  .banner__paint-marinetti{
+    background-image: url('../img/paint4-2.png');
+   background-size:cover;
+    width:11.46vw;
+    height:2.08vw;
+    margin-left: 1.1vw!important;
+    background-repeat:no-repeat;
+    font-family: "OpenSans-Regular";
+    font-weight: 600;
+   
+  }
+  .banner__paint-malevich{
+    background-image: url('../img/paint4-3.png');
+   background-size:cover;
+    width:11.46vw;
+    height:2.08vw;
+    margin-left: 1.1vw!important;
+    background-repeat:no-repeat;
+    font-family: "OpenSans-Regular";
+    font-weight: 600;
+   
+  }
+  .banner__paint-pikasso{
+    background-image: url('../img/paint4-4.png');
+   background-size:cover;
+    width:11.46vw;
+    height:2.08vw;
+    margin-left: 1.1vw!important;
+    background-repeat:no-repeat;
+    font-family: "OpenSans-Regular";
+    font-weight: 600;
+    
+  }
+  .banner__paint-karra{
+    background-image: url('../img/paint5-1.png');
+   background-size:cover;
+    width:11.46vw;
+    height:2.08vw;
+    margin-left: 1.1vw!important;
+    background-repeat:no-repeat;
+    font-family: "OpenSans-Regular";
+    font-weight: 600;
+   
+  }
+  .banner__paint-pratella{
+    background-image: url('../img/paint5-2.png');
+   background-size:cover;
+    width:11.46vw;
+    height:2.08vw;
+    margin-left: 1.1vw!important;
+    background-repeat:no-repeat;
+    font-family: "OpenSans-Regular";
+    font-weight: 600;
+   
+  }
+  .banner__paint-severini{
+    background-image: url('../img/paint5-3.png');
+   background-size:cover;
+    width:11.46vw;
+    height:2.08vw;
+    margin-left: 1.1vw!important;
+    background-repeat:no-repeat;
+    font-family: "OpenSans-Regular";
+    font-weight: 600;
+    
+  }
+  .banner__paint-bala{
+    background-image: url('../img/paint5-4.png');
+    background-size:cover;
+    width:11.46vw;
+    height:2.08vw;
+    margin-left: 1.1vw!important;
+    background-repeat:no-repeat;
+    margin-left: 1.1vw!important;
+    font-family: "OpenSans-Regular";
+    font-weight: 600;
+    }
+    
+    .banner__submenu-li{
+      display: flex;
+      flex-direction: row;
+      } 
+    .banner__icon-expand-first{
+      width: 1.26vw;
+      height: 0.52vw;
+      margin-left: -6.6vw;
+    
+    }
+    .banner__icon-expand{
+      width: 1.26vw;
+      height: 0.52vw;
+      margin-top: 1.2vw;
+      margin-left: -6.2vw
+    
+    }
+    .banner__icon-expand-main{
+      margin-left: -1.6vw;
+      padding-top: 0.4vw;
+     
+    }
+    .banner__submenu-li-first{
+      font-size: 0.94vw;
+      margin-top: 0.4vw;
+      margin-left: 0.8vw;
+      margin-right: 1.0vw;
+      letter-spacing: 0.2vw;
+       }
+    .banner__submenu-imp{
+      margin-left: 3.5vw;
+    }
+    .banner__submenu-li-postimp{
+      margin-left: 3.5vw;
+}
+    .banner__submenu-li-avangard{
+      margin-left: 3.6vw;
+      margin-right: 0.3vw;
+}
+    .banner__submenu-li-futorism{
+      margin-left: 4.5vw;
+    }
+ 
